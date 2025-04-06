@@ -47,6 +47,15 @@
     behaviors {
     };
 
+    macros {
+        macro1: macro1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(F) &kp B &kp E &kp O &kp G &kp H &kp K &kp S &kp AT &kp N8 &kp N5 &kp N0 &kp N3 &kp N2 &kp N9>;
+            label = "MACRO1";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -65,10 +74,10 @@
 
         ALT {
             bindings = <
-&kp ESC         &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8    &kp F9     &kp F10  &kp DELETE
-&trans          &kp F11          &kp F12         &trans           &trans           &trans             &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP    &kp HOME   &trans   &kp INSERT
-&kp LEFT_SHIFT  &kp LEFT_GUI     &kp LEFT_SHIFT  &kp LCTRL        &kp LEFT_ALT     &trans             &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN  &kp RIGHT  &trans   &trans
-&kp LCTRL       &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &trans    &trans     &trans   &trans
+&kp ESC         &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8    &kp F9     &kp F10           &kp DELETE
+&trans          &kp F11          &kp F12         &trans           &trans           &trans             &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP    &kp HOME   &kp LANG_HANGEUL  &kp INSERT
+&kp LEFT_SHIFT  &kp LEFT_GUI     &kp LEFT_SHIFT  &kp LCTRL        &kp LEFT_ALT     &macro1            &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN  &kp RIGHT  &trans            &trans
+&kp LCTRL       &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &trans    &trans     &trans            &trans
 &kp C_MUTE      &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans    &trans     &trans
             >;
 
