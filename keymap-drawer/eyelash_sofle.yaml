@@ -62,7 +62,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '2'
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - '&new_behavior'
+  - '&td1'
   - {t: '`', s: '~'}
   - {t: \, s: '|'}
   alt_layer:
