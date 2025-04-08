@@ -46,9 +46,9 @@
         tapping-term-ms = <300>;
     };
 
-    new_behavior: new_behavior {
+    td1: td1 {
         compatible = "zmk,behavior-tap-dance";
-        label = "NEW_BEHAVIOR";
+        label = "TD1";
         #binding-cells = <0>;
         bindings = <&kp BSPC>, <&kp DELETE>;
     };
@@ -70,11 +70,11 @@
 
         DEFAULT {
             bindings = <
-&mt ESCAPE NUMBER_1  &kp NUMBER_2      &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6    &kp UP_ARROW     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0  &kp EQUAL      &kp MINUS
-&kp TAB              &kp Q             &kp W         &kp E         &kp R         &kp T           &kp DOWN_ARROW   &kp Y         &kp U         &kp I          &kp O         &kp P          &kp LEFT_BRACKET
-&td0                 &kp A             &kp S         &kp D         &kp F         &kp G           &kp LEFT_ARROW   &kp H         &kp J         &kp K          &kp L         &kp SEMI       &kp APOS
-&kp LCTRL            &kp Z             &kp X         &kp C         &kp V         &kp B           &kp RIGHT_ARROW  &kp N         &kp M         &kp COMMA      &kp DOT       &kp FSLH       &kp RIGHT_BRACKET
-&kp C_MUTE           &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE     &mo 1           &kp ENTER        &mo 2         &kp ENTER     &new_behavior  &kp GRAVE     &kp BACKSLASH
+&mt ESCAPE NUMBER_1  &kp NUMBER_2      &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6    &kp UP_ARROW     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp EQUAL      &kp MINUS
+&kp TAB              &kp Q             &kp W         &kp E         &kp R         &kp T           &kp DOWN_ARROW   &kp Y         &kp U         &kp I         &kp O         &kp P          &kp LEFT_BRACKET
+&td0                 &kp A             &kp S         &kp D         &kp F         &kp G           &kp LEFT_ARROW   &kp H         &kp J         &kp K         &kp L         &kp SEMI       &kp APOS
+&kp LCTRL            &kp Z             &kp X         &kp C         &kp V         &kp B           &kp RIGHT_ARROW  &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH       &kp RIGHT_BRACKET
+&kp C_MUTE           &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE     &mo 1           &kp ENTER        &mo 2         &kp ENTER     &td1          &kp GRAVE     &kp BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
