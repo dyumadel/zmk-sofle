@@ -87,7 +87,7 @@
 &trans          &trans           &trans          &trans           &trans           &trans             &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP    &kp HOME   &trans   &kp F12
 &kp LEFT_SHIFT  &trans           &trans          &kp CAPS         &kp F18          &macro1            &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN  &kp RIGHT  &trans   &trans
 &kp LCTRL       &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &trans    &trans     &trans   &trans
-&kp C_MUTE      &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans    &trans     &trans
+&kp C_MUTE      &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &kp INSERT       &kp DELETE       &trans    &trans     &trans
             >;
 
             display-name = "alt_layer";
